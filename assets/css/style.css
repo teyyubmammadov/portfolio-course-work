@@ -1,0 +1,45 @@
+@import url(./reset.css);
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.header {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    padding: 41px 112.5px 0;
+    align-items: center;
+    /* margin: 0 112.5px;
+    margin-top: 41px; */
+}
+
+a {
+    text-decoration: none
+}
+.header a{
+    padding-right: 5px;
+    color: #000
+}
+
+.fa-bars-staggered{
+    display: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&family=Poppins:wght@300&family=Roboto:wght@100;300;400;700&display=swap');
+
+@media(max-width:788px){
+
+    .header{
+   
+        padding:41px 40px 0 ;
+    }
+
+.fa-bars-staggered {
+    display: flex;
+}
+.nav-links{
+    display: none;
+}
+}
