@@ -43,3 +43,36 @@ a {
     display: none;
 }
 }
+.overlay{
+    background-color: rgba(0, 0, 0, .8);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+
+}
+.overlay .nav-links a{
+    color: #aaa;
+    margin-bottom: 10px;
+    font-size: 34px;
+    transition: all 1.2s ease;
+}
+.overlay .nav-links a:hover{
+    color: #fff;
+    transform: translateX(50px);
+}
+.overlay .nav-links {
+  
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.fa-xmark{
+    font-size: 34px;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    color: #fff;
+}
