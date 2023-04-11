@@ -25,7 +25,9 @@ a {
 .fa-bars-staggered{
     display: none;
 }
-
+*{
+    outline: 1px solid red 
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&family=Poppins:wght@300&family=Roboto:wght@100;300;400;700&display=swap');
 
@@ -46,7 +48,8 @@ a {
 .overlay{
     background-color: rgba(0, 0, 0, .8);
     height: 100vh;
-    width: 100%;
+    width: 0;
+    overflow-x: hidden;
     position: fixed;
 
 }
@@ -75,4 +78,30 @@ a {
     top: 45px;
     right: 45px;
     color: #fff;
+}
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.introduction h1{
+    font-size: 72px;
+    font-weight: 700;
+    min-width: 650px;
+}
+
+.introduction h1 span {
+    color: #FF8A56;
+}
+
+.introduction .intro-left-side {
+    padding-top: 134px;
+    padding-left: 113px;
+}
+.intro-right-side{
+    padding-top: 70px;
+    min-width: 400px;
+}
+.intro-right-side img {
+    width: 100%;
 }
