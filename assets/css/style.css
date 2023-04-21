@@ -197,6 +197,7 @@ a {
 .trusted-by > .trusted-companies {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
  @media(max-width:991px) {
    .trusted-company:nth-child(1){
@@ -219,3 +220,71 @@ a {
     }
  }
 /* TRUSTED COMPANIES END  */
+
+/* SERVICES SECTION START */
+.services-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#FF5E69;
+    font-weight: 700;
+    
+}
+.services-section h6{
+    text-align: center;
+    font-size: 3.375rem;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.services-section{
+    padding: 77px 90.73px 171px;
+}
+.services-section ul{
+    list-style-type: square;
+    list-style-position: inside;
+
+}
+.services-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+
+}
+.services-cards > .service-card small{
+    color:#666666;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 25px;
+    display: inline-block;
+    text-align: justify;
+    
+}
+.services-cards > .service-card h3{
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 39.17px;
+
+}
+.services-cards > .service-card > ul  {
+    
+    margin-top: 21px;
+}
+.services-cards > .service-card li{
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.services-cards > .service-card {
+    width: 30%;
+    min-width: 252px;
+    padding: 40px 10px;
+    transition: all 1.2s ease;
+}
+
+.services-cards > .service-card:hover{
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, .4);
+}
+
+/* SERVICES SECTION END */
