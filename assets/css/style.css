@@ -17,26 +17,32 @@ body{
 a {
     text-decoration: none
 }
+
+.header > .nav-links > a:hover {
+    color: #b4acac;
+    transform: translateX(50px);
+}
+
 .header a{
     padding-right: 5px;
     color: #000
+
 }
 
 .fa-bars-staggered{
     display: none;
 }
-*{
+/* *{
     outline: 1px solid red 
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&family=Poppins:wght@300&family=Roboto:wght@100;300;400;700&display=swap');
 
 @media(max-width:788px){
 
-    .header{
-   
-        padding:41px 40px 0 ;
-    }
+.header{
+   padding:41px 40px 0 ;
+}
 
 .fa-bars-staggered {
     display: flex;
@@ -44,6 +50,7 @@ a {
 .nav-links{
     display: none;
 }
+
 }
 .overlay{
     background-color: rgba(0, 0, 0, .8);
@@ -79,29 +86,136 @@ a {
     right: 45px;
     color: #fff;
 }
+
+/* 
+/* INTRODUCTION SECTION START */
 .introduction {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
-}
-.introduction h1{
-    font-size: 72px;
-    font-weight: 700;
-    min-width: 650px;
+    flex-wrap: wrap;
 }
 
-.introduction h1 span {
+.introduction > .intro-left-side {
+    padding-top: 134px;
+    padding-left: 113px;
+    min-width: 601px;
+}
+
+.introduction > .intro-left-side > h1{
+    font-size: 72px;
+    font-weight: 700;
+    /* min-width: 650px; */
+}
+
+.introduction > .intro-left-side > h1 > span {
     color: #FF8A56;
 }
 
-.introduction .intro-left-side {
-    padding-top: 134px;
-    padding-left: 113px;
-}
-.intro-right-side{
+.introduction > .intro-right-side{
     padding-top: 70px;
-    min-width: 400px;
+    min-width: 500px;
+    height: 500px;
 }
-.intro-right-side img {
+.introduction > .intro-right-side img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
+/* INTRODUCTION SECTION END */
+
+
+/* 991 768 576 */
+@media(max-width:991px){
+   .introduction{
+      padding: 0 40px;
+   }
+   .intro-left-side h1{
+    font-size: 3.5rem;
+   }
+
+}
+/* book a call start */
+.intro-left-side > p {
+    color: #aaa;
+    margin-top: 30px;
+}
+.book-a-call a:first-child{
+    background-color: #222;
+    width: 151px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+}
+.book-a-call a {
+    color: #000;
+}
+.book-a-call{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+
+
+@media(max-width:768px) {
+    .intro-left-side {
+        min-width: 500px;
+        padding:20px !important;
+    }
+}
+
+
+@media(max-width:576px) {
+    .introduction {
+        padding: 10px;
+    }
+
+    .intro-left-side {
+        min-width: 400px !important;
+    }
+
+    .introduction .intro-left-side h1 {
+        font-size: 50px;
+    }
+    
+} 
+
+/* TRUSTED COMPANIES START */
+.trusted-by{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.trusted-by h6{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.trusted-by > .trusted-companies {
+    display: flex;
+    justify-content: space-evenly;
+}
+ @media(max-width:991px) {
+   .trusted-company:nth-child(1){
+    display: none;
+    /* .trusted-company:nth-child(even) cüt övlatları  */
+    /* .trusted-company:nth-child(odd) tək övlatları  */
+    /* .trusted-company:not(:last-child) yalniz son evlat  */
+}
+
+  
+ }
+ @media(max-width:768px) {
+    .trusted-company:nth-child(2) {
+        display:none;
+    }
+ }
+ @media(max-width:505px) {
+    .trusted-company:nth-child(3) {
+        display: none;
+    }
+ }
+/* TRUSTED COMPANIES END  */
