@@ -413,17 +413,13 @@ a {
  }
  
  .cart{
-    /* width: 486px !important;
-    height: 468px; */
     padding-right: 24px !important;
  }
  
     :root {
         --benovsheyi-reng:#B16CEA;
     }
-    /* body{
-        overflow-x: hidden;
-    } */
+
 .results {
     display: flex;
     justify-content: space-between;
@@ -439,8 +435,6 @@ a {
     align-items: center;
     margin-right: 112px;
     margin-bottom: 117px;
-    /* margin-bottom: 117px; */
-   
 }
 .projects-section > h5{
     color:var(--benovsheyi-reng);
@@ -481,21 +475,16 @@ a {
 .contral-btns{
     display: flex;
     justify-content: flex-end;
-   
-    margin-top: 26px !important;
-
+    padding-top: 40px !important;
+}
+.contral-btns button{
+   width: 54px;
+   height: 54px;
+}
+.contral-btns button:last-child{
+    margin-left: 10px;
 }
 
-.contral-btns > button {
-    margin-right: 7px;
-    width: 40px;
-    height: 40px;
-    
-}
-.contral-btns > button:last-child{
-    margin-right: 90px !important;
-}
- 
 @media(max-width:768px){
     .projects-section{
         padding-left: 10px;
@@ -507,22 +496,39 @@ a {
     .projects-section .results{
         display: flex;
         justify-content: space-between;
-      
+        
     }
     .projects-section .results h1{
         font-size: 40px;
         min-width: 250px;
     }
+    .contral-btns{
+        margin-left: 70px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        display: flex;
+        width: 100% !important;
+    }
+    .contral-btns button{
+        margin: 0 !important;
+        width: 45px !important;
+        height: 45px !important;
+        
+        
+    }
+    .contral-btns button:last-child{
+        margin-left: 15px !important;
+    
 }
 
 /* LATEST BLOGS SECTION START*/
 .latest-blog-section{
-  padding-bottom: 144px;
+    padding-bottom: 144px;
   padding-top: 300px;
   padding-left: 113px;
   padding-right: 112px;
   background-color: #222;
-  margin-top: -230px !important;
+  margin-top: -255px !important;
   
 } 
     
@@ -588,6 +594,11 @@ a {
 @Media(max-width:768px){
     .latest-left-side{
         padding-bottom: 40px;
+    }
+    .latest-blog-section{
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 190px;
     }
 }
 
