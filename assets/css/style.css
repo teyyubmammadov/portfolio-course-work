@@ -518,9 +518,8 @@ a {
     }
     .contral-btns button:last-child{
         margin-left: 15px !important;
-    
+    }
 }
-
 /* LATEST BLOGS SECTION START*/
 .latest-blog-section{
     padding-bottom: 144px;
