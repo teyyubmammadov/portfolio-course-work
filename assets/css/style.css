@@ -7,12 +7,9 @@ body {
 
 .header {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     padding: 41px 112.5px 0;
     align-items: center;
-    /* margin: 0 112.5px;
-    margin-top: 41px; */
 }
 
 a {
@@ -21,10 +18,14 @@ a {
 }
 
 .header>.nav-links>a:hover {
-    color: #b4acac;
+    color: #FF8A56;
+    border-bottom:2px solid #FF8A56 ;
     transform: translateX(50px);
 }
-
+.header>.nav-links>a:last-child:hover{
+    border-bottom: none;
+    color: none;
+}
 .header a {
     padding-right: 5px;
     color: #000
@@ -149,7 +150,14 @@ a {
     .intro-left-side h1 {
         font-size: 3.5rem;
     }
-
+   .intro-right-side img{
+    width: 303px !important;
+    padding-left: 55px;
+    /* padding-top: 0px; */
+   }
+   .intro-right-side{
+    padding-top: 50px !important;
+   }
 }
 
 /* book a call start */
@@ -235,6 +243,12 @@ a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     /* margin:0 auto !important; */
+}
+@media(max-width:991px){
+    .trusted-by h6 {
+        margin-top: 40px !important;
+    
+    }
 }
 /* 
 @media(max-width:991px) {
@@ -349,7 +363,14 @@ a {
     .services-section {
         padding: 20px;
     }
+    .trusted-company{
+        padding-bottom: 10px;
+    }
+    .services-cards{
+        padding-left: 15px;
+    }
 }
+
 
  /* PROJECTS SECTION START */
  body{
@@ -474,7 +495,25 @@ a {
 .contral-btns > button:last-child{
     margin-right: 90px !important;
 }
-
+ 
+@media(max-width:768px){
+    .projects-section{
+        padding-left: 10px;
+        margin-top: -80px  !important;
+    }
+    .projects-section button{
+        margin-left: 40px;
+    }
+    .projects-section .results{
+        display: flex;
+        justify-content: space-between;
+      
+    }
+    .projects-section .results h1{
+        font-size: 40px;
+        min-width: 250px;
+    }
+}
 
 /* LATEST BLOGS SECTION START*/
 .latest-blog-section{
@@ -546,6 +585,12 @@ a {
     font-size: 18px;
 }
 
+@Media(max-width:768px){
+    .latest-left-side{
+        padding-bottom: 40px;
+    }
+}
+
 /* LATEST BLOGS SECTION END*/
 
            /*  PRODUCT DESIGNER START */
@@ -595,6 +640,27 @@ a {
     padding: 8px;
    
 }
+@media(max-width:768px){
+    .product-top-section{
+        margin-left: -90px !important;
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .product-top-section h6{
+        font-size: 19px;
+    }
+    .product-top-section h2{
+        font-size: 29px;
+    }
+    .product-right-side{
+        font-size: 15px;
+        /* padding-left: 30px; */
+    }
+    .product-right-side small{
+        margin-left: 40px;
+        min-width: 250px;
+    }
+}
 
 /* PRODUCT DESIGNER END  */
 
@@ -640,12 +706,21 @@ body{
 .education-head-picture {
     padding-bottom: 83px;
 }
-@media(max-width:600px){
+@media(max-width:678px){
 
-    .education-work-section{
+    /* .education-work-section{
         padding-left: 50px;
         padding-right: 10px;
-    } 
+    }  */
+   .education-section{
+        margin-left: -90px;
+        padding-bottom: 100px;
+        min-width: 370px !important;
+    }
+    .work-section{
+        margin-left: -90px;
+        min-width: 370px !important;
+    }
 }
             /* work section start  */
 
@@ -692,7 +767,23 @@ body{
 .work-right-bottom-side small{
     font-size:16px;
 }
-
+@Media(max-width:768px){
+    .testimonials-top-side{
+        margin-left: -80px;
+    }
+    .testimonials-top-side h2{
+        text-align: center;
+        min-width: 400px;
+        padding-top: 50px;
+        margin-left: -50px !important;
+    }
+    .testimonials-bottom-left img{
+        width: 300px !important;
+        margin-top: -50px;
+        margin-left: -70px !important;
+    }
+   
+}
 
 /* education-work-section end */
 
@@ -821,7 +912,14 @@ body{
     color: #fff;
     font-weight: 700;
 }
-
+@Media(max-width:678px){
+    .faq-top-side{
+        margin-left: -50px;;
+    }
+    .faq-top-side h6{
+        padding-left: 70px;
+    }
+}
     /* FAQ SECTION END */
 
 /* kickass-section START */
@@ -887,6 +985,7 @@ body{
 .kickass-bottom-side{
     display: flex;
     justify-content: space-between;
+    padding-right: 400px;
 }
 
 .kickass-bottom-side p{
